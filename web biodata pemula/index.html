@@ -1,0 +1,173 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae - Ickwan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background: linear-gradient(to bottom, #1e1e1e, #2d2d2d);
+            color: #fff;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #111;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 3em;
+            color: #f4d03f;
+            letter-spacing: 3px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            background-color: #222;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.7);
+        }
+        .profile {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .profile img {
+            width: 200px;
+            height: 250px;
+            object-fit: cover;
+            border: 5px solid #f4d03f;
+            border-radius: 15px;
+        }
+        .info td {
+            padding: 8px 10px;
+        }
+        h2.section-title {
+            background-color: #f4d03f;
+            color: #111;
+            padding: 10px;
+            margin-top: 40px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .education, .about, .skills, .contacts {
+            margin-top: 20px;
+        }
+        .education ul, .skills ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .education li, .skills li {
+            background: #333;
+            padding: 10px;
+            margin-bottom: 8px;
+            border-left: 6px solid #f4d03f;
+        }
+        .button {
+            display: block;
+            width: 120px;
+            margin: 30px auto 0;
+            padding: 12px;
+            background-color: #f4d03f;
+            color: #111;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .button:hover {
+            background-color: #e2b607;
+        }
+        footer {
+            margin-top: 40px;
+            background-color: #111;
+            padding: 15px;
+            text-align: center;
+            color: #aaa;
+        }
+    </style>
+</head>
+<!-- Tambahin ini sebelum </body> -->
+<audio id="backsound" autoplay loop>
+    <source src="music/chillsound.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<audio id="clickSound">
+    <source src="sounds/click.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+    // Buat play sound effect waktu tombol "Next Page" diklik
+    document.querySelector(".button").addEventListener("click", function(event) {
+        const clickSound = document.getElementById("clickSound");
+        if (clickSound) {
+            clickSound.play();
+        }
+    });
+</script>
+<body>
+    <header>
+        <h1>CURRICULUM VITAE</h1>
+    </header>
+    <div class="container">
+        <div class="profile">
+            <img src="images/ickwann.jpg" alt="Foto Ickwan">
+            <table class="info">
+                <tr><td><strong>Nama</strong></td><td>: Ickwan Zacky Alawi</td></tr>
+                <tr><td><strong>Alamat</strong></td><td>: Jln. Pemuda</td></tr>
+                <tr><td><strong>Tempat, Tanggal Lahir</strong></td><td>: Lubuklinggau, 09 Juni 2006</td></tr>
+                <tr><td><strong>Agama</strong></td><td>: Islam</td></tr>
+                <tr><td><strong>Asal</strong></td><td>: Lubuklinggau</td></tr>
+                <tr><td><strong>Hobi</strong></td><td>: Baca Buku</td></tr>
+                <tr><td><strong>Instagram</strong></td><td>: <a href="https://instagram.com/Ickwanzz" target="_blank" style="color: #f4d03f">@Ickwanzz</a></td></tr>
+            </table>
+        </div><h2 class="section-title">Pendidikan</h2>
+    <div class="education">
+        <ul>
+            <li>2012 - 2018 : SDN 63 Lubuklinggau</li>
+            <li>2018 - 2021 : SMP Negeri 9 Lubuklinggau</li>
+            <li>2021 - 2024 : SMK Negeri 3 Lubuklinggau</li>
+            <li>2024 - Sekarang : Universitas Bina Insan</li>
+        </ul>
+    </div>
+
+    <h2 class="section-title">Tentang Saya</h2>
+    <div class="about">
+        <p>Halo! Saya Ickwan, seorang mahasiswa yang sedang belajar dan berkembang di dunia teknologi dan desain. Saya suka membaca buku dan juga senang mempelajari hal baru, khususnya di bidang IT.</p>
+    </div>
+
+    <h2 class="section-title">Keahlian</h2>
+    <div class="skills">
+        <ul>
+            <li>HTML, CSS & Web Design</li>
+            <li>Desain Grafis (CorelDraw & Photoshop)</li>
+            <li>Bahasa Inggris Dasar</li>
+            <li>Public Speaking</li>
+            <li>Microsoft Office</li>
+        </ul>
+    </div>
+
+    <h2 class="section-title">Kontak Saya</h2>
+    <div class="contacts">
+        <p>Email: ickwan@example.com</p>
+        <p>WhatsApp: 08xx-xxxx-xxxx</p>
+    </div>
+
+    <a class="button" href="page2.html">Next Page</a>
+</div>
+<footer>
+    <marquee>Copy &copy; 2025 Ickwan Zacky Alawi. All Rights Reserved.</marquee>
+</footer>
+
+</body>
+</html>
+

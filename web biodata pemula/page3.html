@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Anime Vibes Gallery - Page 3</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #1e1e2f, #2a2a3b);
+      color: white;
+    }
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      background: #343467;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    }
+    header h1 {
+      font-size: 3.5em;
+      margin: 0;
+      color: #ffdd00;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 4px #000;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      padding: 40px 30px;
+    }
+    .card {
+      background: #3e3e5f;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.6);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 10px 25px rgba(255, 221, 0, 0.3);
+    }
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .card h3 {
+      text-align: center;
+      margin-top: 12px;
+      color: #ffd700;
+    }
+    .back-btn {
+      display: block;
+      margin: 30px auto;
+      padding: 12px 30px;
+      font-size: 18px;
+      background: #ffd700;
+      color: #1e1e2f;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .back-btn:hover {
+      background: #fff577;
+    }
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #222;
+      color: #aaa;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+    <audio autoplay loop hidden>
+        <source src="music/chillmusic.mp3" type="chillmusic">
+    </audio>
+
+<header>
+  <h1>My Favorite Anime Characters</h1>
+</header>
+
+<audio id="bg-music" src="music/chillmusic.mp3" loop></audio>
+
+<div class="gallery">
+  <div class="card">
+    <img src="images/sung-jin-woo-karma.gif" alt="Sung jin woo">
+    <h3>Sung jin woo</h3>
+  </div>
+  <div class="card">
+    <img src="images/sung-jin-woo-new-episode.gif" alt="Sung jin woo">
+    <h3>Sung jin woo</h3>
+  </div>
+  <div class="card">
+    <img src="images/sung-jin-woo-solo-leveling-gif.gif" alt="sung jin woo">
+    <h3>Sung jin woo</h3>
+  </div>
+  <div class="card">
+    <img src="images/sung-jin-woo-solo-leveling-season-2.gif" alt="Sung jin woo">
+    <h3>Sung jin woo</h3>
+  </div>
+  <div class="card">
+    <img src="images/solo-leveling-sung-jin-woo (1).gif" alt="Sung jin woo">
+    <h3>Sung jin woo</h3>
+  </div>
+  <div class="card">
+    <img src="images/solo-leveling-sung-jin-woo (2).gif" alt="Sung jin woo">
+    <h3>Sung jin woo</h3>
+  </div>
+  <div class="card">
+    <img src="images/tanjiro-mugen-train.gif" alt="kamado tanjiro">
+    <h3>kamado tanjiro</h3>
+  </div>
+  <div class="card">
+    <img src="images/tanjiro (2).gif" alt="kamado tanjiro">
+    <h3>kamado tanjiro</h3>
+  </div>
+  <div class="card">
+    <img src="images/tanjiro (4).gif" alt="kamado tanjiro">
+    <h3>kamado tanjiro</h3>
+  </div>
+  <div class="card">
+    <img src="images/tanjiro-j8.gif" alt="kamado tanjiro">
+    <h3>kamado tanjiro</h3>
+  </div>
+  <div class="card">
+    <img src="images/tanjiro (3).gif" alt="kamado tanjiro">
+    <h3>kamado tanjiro</h3>
+  </div>
+  <div class="card">
+    <img src="images/tanjiro (1).gif" alt="kamado tanjiro">
+    <h3>kamado tanjiro</h3>
+  </div>
+</div>
+
+<a href="page2.html" class="back-btn" onclick="playClickSound()">Kembali ke Page 2</a>
+
+<script>
+  const bgMusic = document.getElementById("bg-music");
+  const clickSound = new Audio("sounds/click-234708.mp3");
+
+  // Auto-play musik setelah interaksi
+  document.addEventListener("click", () => {
+    if (bgMusic.paused) {
+      bgMusic.play().catch(err => {
+        console.log("Autoplay diblokir oleh browser:", err);
+      });
+    }
+  }, { once: true });
+
+  function playClickSound() {
+    clickSound.play();
+  }
+</script>
+
+<footer>
+  &copy; 2025 Ickwan Zacky Alawi | Designed by Hat the Dev
+</footer>
+
+</body>
+</html>
